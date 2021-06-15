@@ -1,6 +1,7 @@
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 10;
 }
 
 body {
@@ -8,117 +9,142 @@ body {
 }
 
 header {
-    padding: 20px;
-    font-family:'Times New Roman', Times, serif;
     background-color: #150329;
+    padding: 25px 25px 25px 0px;
+    font-family: 'Times New Roman', Times, serif;
     color: rgba(194, 111, 241, 0.925);
+    height: 100px;
 }
 
 header h1 {
-    display:inline-block;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 50px;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 5px;
+    margin-right: 0px;
     float: right;
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
-    color: rgba(194, 111, 241, 0.925);
 }
 
-header nav ul {
+.box{
+    background-color: rgba(194, 111, 241, 0.925);
+    color: #150329;
+}
+
+header ul li {
     list-style-type: none;
+    display:inline-block;
+    text-align: right;
+    font-size: 40px;
+    padding: 0px 30px 0px 30px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 75px;
-}
-
-a {
+.purple {
     color: rgba(194, 111, 241, 0.925)
 }
 
-.links {
-    font-style: #150329;
-    list-style: none;
-    justify-content: space-between;
+.black {
+    color:#150329
 }
 
 .keys {
     height: 200px;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     background-image: url("./Images/keys.jpg");
-    background-size: cover;
     background-position: center;
+    background-color:rgba(194, 111, 241, 0.925);
 }
 
-main {
-    display:flex;
+.about {
+    border-right: 5px solid #150329;
+    margin-right: 0px;
+    padding: 50px 0px 0px 10px;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(194, 111, 241, 0.925);
+    color: #150329;
+    width: 150px;
 }
 
-aside {
-    flex: 5%;
-    background: rgba(194, 111, 241, 0.925);
-    height: 925px;
-    padding: 5px;
-    flex-wrap: wrap;
+.about-me,
+.working,
+.contacts {
+    margin: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+.workstation {
+    border-right: 5px solid #150329;
+    margin-right: 0px;
+    padding: 50px 0px 0px 10px;
+    height: 450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(194, 111, 241, 0.925);
+    color: #150329;
+    width: 150px
+}
+
+.column {
+    float: left;
+    width: 50%;
   }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact {
+    border-right: 5px solid #150329;
+    margin-right: 0px;
+    padding: 50px 0px 0px 10px;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(194, 111, 241, 0.925);
+    color: #150329;
+    width: 150px;
+}
 
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-.section {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.horiseon {
-    padding: 20px;
-}
-
-.work {
-    height: 100px;
-    width: 90%;
-    margin-bottom: 25px;
-    background-image: url("./Images/Horiseon_ss.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.about-me,
-.work,
-.contact {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgba(194, 111, 241, 0.925);
-    color: #150329;
-}
-
-.about-me,
-.work,
-.contact {
-    max-height: 200px;
-}
-
-.about-me,
-.work,
-.contact {
-    margin-bottom: 20px;
-    font-size: 25px;
+    height: 200px;
 }
 
 footer {
     padding: 20px;
     text-align: center;
     background: #150329;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgba(194, 111, 241, 0.925);
+    max-height: 500px;
+    min-height: 300px;
+    width: 100%
+}
+
+#works {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about,
+.work,
+.contact {
+    flex: 0 0 1;
+}
+
+.about-me,
+.working,
+.contacts{
+    flex: 0 0 1;
 }
