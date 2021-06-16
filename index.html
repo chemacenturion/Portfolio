@@ -1,91 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Centurion Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-    <body>
-        <header>
-            <h1><span class="box">CHEMA CENTURION</span></h1>
-            <nav>
-                <ul>
-                    <li><strong><a href="#about-me" class="purple" >About Me</a></li></strong>
-                    <li><strong><a href="#work" class="purple">Work</a></li></strong>
-                    <li><strong><a href="#contact" class="purple">Contact Me</a></li></strong>
-                </ul>
-            </nav>
-        </header>
-
-        <img class="keys"><img>
-
-        <main>
-            <section class="flex-container">
-
-                <aside class="about">
+<body>
+    <header>
+        <h1><span class="box">CHEMA CENTURION</span></h1>
+        <nav>
+            <ul>
+                <li><strong><a href="#about-me" class="purple">About Me</a></li></strong>
+                <li><strong><a href="#work" class="purple">Work</a></li></strong>
+                <li><strong><a href="#contact" class="purple">Contact Me</a></li></strong>
+            </ul>
+        </nav>
+    </header>
+    <img class="keys"><img>
+    <main>
+        
+        <section class ="wrapper">
+            <div>
                 <h2>About Me</h2>
-                </aside>
-
-                    <section id="about-me" class="about-me">
-                        <img src="./assets/css/Images/Jose.jpg" alt="Jose Photo" class="float-right" />
-                        <p>I am a student currently enrolled in the UPENN LPS Coding Bootcamp hoping to transition my career into the field of web development. I've spent the majority of my career in golf instruction and sports therapy; first attending The Golf Academy of Orlando in 2008, then obtaining my B.S. in Kinesiology from Temple University in 2017.</p>
-                        <br>
-                        <p>For high school I attended the Philadelphia High School for Creative and Performing Arts with a concentration in visual arts. I hope programming will reconnect me with my artistic roots and allow me  to implement my artistic training in a work setting.</p>
-                    </section>
-                    
-            </section>
-
-            <section id="work" class="flex-container">
-
-                <aside class="workstation">
-                    <h2>Work </h2>
-                </aside>
-
-                <div id="works">
-                    <section class="working">
-                        <a href="https://chemacenturion.github.io/Horiseon/" target="_blank">
-                        <img style="border: 5px solid black;" src="./assets/css/Images/horiseon.png" alt="horiseon website" width="600" height="300"></a>
-
-                        <div class="row">
-                            <div class="column">
-                                <a href="https://chemacenturion.github.io/prework-about-me/" target="_blank">
-                                    <img style="border: 5px solid black;" src="./assets/css/Images/prework.png" alt="prework website" width="300" height="150"></a>
-                        </div>
-                        
-                        <div class="column"></div>
-                        <a href="https://chemacenturion.github.io/first-day-demo/" target="_blank">
-                            <img style="border: 5px solid black;" src="./assets/css/Images/first_deploy.png" alt="first website deployment"
-                            width="300" height="150"></a>
-                        </div>
-                        </div>
-
-                    </section>
-                </div>
-        
-            </section>
-
-            <contact class="flex-container">
-
-                <aside class="contact">
-                    <h2>Contact</h2>
-                </aside>
-
-                <section id="contact" class="contacts">
-
-                    <div id="links" class="links">
-                    <a href= "mailto: centurion.philadelphia@gmail.com" class="black">Gmail</a> <a href="https://github.com/chemacenturion" class="black">GitHub</a> <a href="https://www.linkedin.com/in/jose-centurion-a98300212/" class="black">LinkedIN</a>
-                    </div>
-
+            </div>
+            <div>
+                <section id="about-me" class="about-me">
+                    <img src="./assets/css/Jose.jpg" alt="Jose photo" ALIGN="right" width="240" height="160">
+                    <p><strong>I am a student currently enrolled in the UPENN LPS Coding Bootcamp hoping to transition my career
+                        into the field of web development. I've spent the majority of my career in golf instruction and
+                        sports therapy; first attending The Golf Academy of Orlando in 2008, then obtaining my B.S. in
+                        Kinesiology from Temple University in 2017 while also obtaining a license for massage therapy.</strong></p>
+                    <br>
+                    <p><strong>For high school I attended the Philadelphia High School for Creative and Performing Arts with a
+                        concentration in visual arts. I hope programming will reconnect me with my artistic roots and allow
+                        me to implement my graphic design education in a work setting.</strong></p>
                 </section>
-        
-            </contact>
+            </div>
 
+            <div>
+                <h2>Work</h2>
+            </div>
+            <div>
+                <section id="work" class="work">
+                    <div class="image">
+                        <a href="https://chemacenturion.github.io/Horiseon/" target="_blank">
+                            <img style="border: 5px solid black;" src="./assets/css/Images/horiseon.png" alt="horiseon website" width="600" height="300"></a>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://chemacenturion.github.io/prework-about-me/" target="_blank">
+                                <img style="border: 5px solid black;" src="./assets/css/Images/prework.png" alt="prework website" width="300" height="150"></a>
+                        </div>
+                        <div class="column"></div>
+                            <a href="https://chemacenturion.github.io/first-day-demo/" target="_blank">
+                                <img style="border: 5px solid black;" src="./assets/css/Images/first_deploy.png" alt="first website deployment" width="300" height="150"></a>
+                        </div>
+                    </div>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+            </div>
+            <div>
+                <section id="contact" class="contact">
+                    <div class="contact-me">
+                        <ul>
+                            <a href= "mailto: centurion.philadelphia@gmail.com" target="_blank" class="black">Gmail</a>
+                            <a href="https://github.com/chemacenturion" target="_blank" class="black">GitHub</a>
+                            <a href="https://www.linkedin.com/in/jose-centurion-a98300212/" target="_blank" class="black">LinkedIN</a>
+                        </ul>
+                    </div> 
+                </section>
+            </div>
+        </section>
     </main>
-
-
-        <footer></footer>
-    </body>
-
+    <footer></footer>
+</body>
 </html>
